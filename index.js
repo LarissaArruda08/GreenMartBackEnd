@@ -5,7 +5,7 @@ mongoose.connect('mongodb://3.18.128.69:27017/greenMart');
 require('dotenv').config()
 const express = require('express')
 const app = express()
-const port = 3030
+const port = 3023
 
 const cors = require('cors')
 
