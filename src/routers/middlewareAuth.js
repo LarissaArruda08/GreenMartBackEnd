@@ -2,7 +2,7 @@ const jwtService = require('jsonwebtoken')
 
 module.exports = async (req, res, next) => {
     const routeUser = req.path
-    const nonSecurityRoutesUsers = ['/user/create', '/user/login', '/products', '/product/create', '/product/:id']
+    const nonSecurityRoutesUsers = ['/user/create', '/user/login', '/products', '/product/create']
     if(nonSecurityRoutesUsers.includes(routeUser)) {
         return next()
     }
